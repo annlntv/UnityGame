@@ -12,7 +12,7 @@ public class PlayerUI : MonoBehaviour
 	void Update()
 	{
 		// Обновляем текст с кол-вом ключей
-		keysCounterText.text = keysCount.keys.ToString();
+		keysCounterText.text = "Собрано ключей: " + keysCount.keys.ToString() + "/ 3";
 	}
 }
 
