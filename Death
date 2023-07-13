@@ -6,14 +6,17 @@ using System.Collections;
 public class Death : MonoBehaviour
 {
     public GameObject canvas;
-    public AudioSource deathSound;
+    public AudioSource audioSource;
+    public AudioClip deathSound;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.collider.CompareTag("Player"))
+        Debug.Log("скрипт заработал");
+        if (other.tag == "Player")
         {
+            Debug.Log("столкнулись");
             canvas.SetActive(true);
-            deathSound.Play();
+            audioSource.PlayOneShot(deathSound);
             StartCoroutine(RestartLevelDelayed());
         }
     }
@@ -22,7 +25,7 @@ public class Death : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
 
-        Time.timeScale = 1; // Возобновить время в игре
-        SceneManager.LoadScene("SampleScene");
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
     }
 }
