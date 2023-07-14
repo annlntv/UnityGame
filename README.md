@@ -14,4 +14,4 @@ Package Mahager -> нажать + -> Install package from disk -> выбрать
 Создать еще один Canvas для интерфейса игрока. Добавить к этому канвас TextMeshPro (TMP), везде где надо нажать импорты и тд. Потом просто закрываем окошечко. Пишем в инспекторе текст любой 
 
 Затем каждый из этих скриптов сохранить Ctrl S. К каждому из ключей перетащить скрипт Key, к префабу игрока перетащить KeysCount и PlayerUI
-У скрипта PlayerUi в игроке поставить следующие значения: Canvas --> CanvasWin, KeysCount --> там один префаб игрока, KeysCounterText --> TextMeshPro (TMP)
+У скрипта PlayerUi в игроке поставить следующие значения: Canvas --> CanvasWin, KeysCount --> там один префаб игрока, KeysCounterText --> TextMeshPro (TMP). В PlayerUI уже заложено условие победы, вам нужно просто всё установить нормально
