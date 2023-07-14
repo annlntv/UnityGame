@@ -1,4 +1,1 @@
-# UnityGame
-for my fellas
-ссылка на компоненты: 
-https://github.com/Unity-Technologies/NavMeshComponents
+ссылка на интеграцию с пико 4: https://developer-global.pico-interactive.com/sdk?deviceId=1&platformId=1&itemId=12
